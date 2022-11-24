@@ -3,5 +3,20 @@
   "extends": [
     "config:base"
   ],
+  "packageRules": [
+    {
+      "matchDepTypes": [
+        "engines"
+      ],
+      "enabled": false
+    },
+    {
+      "groupName": "deps",
+      "matchDepTypes": [
+        "dependencies",
+        "devDependencies"
+      ]
+    }
+  ],
   "rangeStrategy": "bump"
 }
